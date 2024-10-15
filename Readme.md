@@ -45,12 +45,6 @@ You need the following to build and run this project:
 
 ## Build Instructions
 
-1. **Clone the repository** or unzip the project files into a directory:
-   ```bash
-   git clone <repository-url>
-   cd nbody_simulation_solution
-   ```
-
 2. **Build the project** using the `b` script:
    ```bash
    ./b
