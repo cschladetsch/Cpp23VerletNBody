@@ -1,0 +1,35 @@
+```
+
+### **.gitignore**
+
+```plaintext
+# Ignore build artifacts
+nbody_simulation
+*.o
+
+# Ignore log and temporary files
+*.log
+*.tmp
+
+# Ignore editor files
+.vscode/
+*.swp
+*.swo
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore compiled binaries
+*.exe
+*.out
+*.app
+
+# Ignore cmake and build directories
+build/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+```
+
