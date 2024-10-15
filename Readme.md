@@ -1,19 +1,20 @@
-# N-Body Simulation
+# N-Body Simulation (C++23)
 
-This is an N-body simulation using SDL2 and C++ that simulates the gravitational interactions between multiple bodies. The simulation also includes wall bouncing and visible traces for each body's movement.
+This is an N-body simulation using SDL2 and C++23 that simulates the gravitational interactions between multiple bodies. The simulation also includes wall bouncing and visible traces for each body's movement.
 
 ## Features
 - **Verlet Integration** for smooth position updates.
 - **Body-to-wall collisions** with bouncing.
 - **Customizable simulation** with command-line arguments.
 - **Persistent trails** showing the movement of the bodies.
+- Written in **C++23**.
 
 ## Requirements
 
 You need the following to build and run this project:
 - **SDL2** development libraries
 - **CMake**
-- **GCC** or **Clang** (default is GCC)
+- A compiler supporting **C++23** (such as **GCC 13+** or **Clang 16+**)
 
 ### Installing SDL2
 
@@ -25,6 +26,21 @@ You need the following to build and run this project:
 - **Mac** (using Homebrew):
   ```bash
   brew install sdl2
+  ```
+
+### Installing GCC/Clang with C++23 Support
+
+- **Ubuntu/Debian**:
+  You can add the required repository for GCC 13 or Clang 16 to get C++23 support.
+
+  For GCC 13:
+  ```bash
+  sudo apt install g++-13
+  ```
+
+  For Clang 16:
+  ```bash
+  sudo apt install clang-16
   ```
 
 ## Build Instructions
@@ -43,7 +59,7 @@ You need the following to build and run this project:
    This script:
    - Creates a `build/` directory.
    - Configures the project using CMake.
-   - Compiles the project.
+   - Compiles the project with **C++23**.
 
 ## Running the Simulation
 
@@ -74,10 +90,10 @@ After building the project, you can run the simulation using the `r` script. Thi
 
 ## Troubleshooting
 
-- If you encounter errors with the compiler, make sure to use **GCC** and **G++** by setting them explicitly in the `b` script:
+- If you encounter errors with the compiler, ensure that you are using **GCC 13+** or **Clang 16+** and set them explicitly in the `b` script:
   ```bash
-  export CC=gcc
-  export CXX=g++
+  export CC=gcc-13
+  export CXX=g++-13
   ```
 
 ## License
